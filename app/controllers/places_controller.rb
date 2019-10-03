@@ -52,8 +52,7 @@ class PlacesController < ApplicationController
       return render plain: 'Not Allowed', status: :forbidden
     end
     @place.destroy
-
-    redirect_to :action => :index
+    redirect_to root_path
   end
 
   private
